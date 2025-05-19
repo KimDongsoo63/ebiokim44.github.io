@@ -6,7 +6,7 @@
     <title>My Web Service</title>
     <meta name="theme-color" content="#2c3e50">
     <meta name="description" content="모바일 최적화 웹 서비스">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
     <style>
         * {
@@ -281,7 +281,7 @@
         // Service Worker 등록
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('sw.js')
                     .then(registration => {
                         console.log('ServiceWorker registration successful');
                     })
